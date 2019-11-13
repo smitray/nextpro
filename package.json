@@ -1,14 +1,16 @@
 {
-  "name": "lumble",
+  "name": "nextpro",
   "version": "1.0.0",
   "description": "Next.js and graphQl boilerplate",
-  "main": "index.js",
   "scripts": {
-    "dev": "backpack dev"
+    "dev": "backpack dev",
+    "prebuild": "rimraf build",
+    "build": "next build ./app/client && backpack build",
+    "start": "node build/main.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/smitray/lumble.git"
+    "url": "git+ssh://git@gitlab.com/smitray/nextpro.git"
   },
   "keywords": [
     "Next.js",
@@ -18,9 +20,9 @@
   "author": "Smit Ray <humancoder@outlook.com, hi@smitray.me, smit@codends.net, debasmit@primeinfoserv.com>",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://gitlab.com/smitray/lumble/issues"
+    "url": "https://gitlab.com/smitray/nextpro/issues"
   },
-  "homepage": "https://gitlab.com/smitray/lumble#readme",
+  "homepage": "https://gitlab.com/smitray/nextpro#readme",
   "dependencies": {
     "@hapi/joi": "^16.1.7",
     "@koa/cors": "^3.0.0",
@@ -56,6 +58,7 @@
     "polished": "^3.4.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+    "rimraf": "^3.0.0",
     "shortid": "^2.2.15",
     "socket.io": "^2.3.0"
   },

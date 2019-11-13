@@ -13,6 +13,7 @@ import {
 
 import { logger } from './logger';
 import graphControl from './graphQl';
+import apiControl from './restApi';
 
 import { catchErr, statusMessage } from './error';
 
@@ -30,17 +31,17 @@ export default (app) => {
   if (process.env.NODE_ENV === 'development') {
     app.use(mount('/public', serve(path.static)));
   }
-  graphControl(app);
-  // if (graphql) {
-  //   graphControl(app);
-  // } else {
-  //   app.use(convert.compose(
-  //     bodyParser({
-  //       multipart: true,
-  //       formLimit: '200mb'
-  //     }),
-  //     helmet(),
-  //   ));
-  //   // apiControl(app);
-  // }
+
+  if (graphql) {
+    graphControl(app);
+  } else {
+    app.use(convert.compose(
+      bodyParser({
+        multipart: true,
+        formLimit: '200mb'
+      }),
+      helmet(),
+    ));
+    apiControl(app);
+  }
 };

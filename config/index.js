@@ -16,5 +16,4 @@ const vars = {
   ..._.merge(env[process.env.NODE_ENV], base),
   ...paths
 };
-console.log(vars);
 module.exports = vars;

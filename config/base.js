@@ -1,4 +1,5 @@
 module.exports = {
+  name: 'NextPro',
   mongodb: {
     options: {
       promiseLibrary: global.Promise,
