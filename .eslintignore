@@ -4,3 +4,4 @@ system/scripts/*.js
 tailwind.config.js
 postcss.config.js
 backpack.config.js
+jest.config.js

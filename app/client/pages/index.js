@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default () => (
-  <p>Hello, finally we&apos;re up with next</p>
+  <p>Hello, world</p>
 );

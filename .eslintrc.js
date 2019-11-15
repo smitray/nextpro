@@ -11,7 +11,8 @@ module.exports = {
     'browser': true
   },
   extends: [
-    '@chiedolabs/eslint-config-nextjs'
+    '@chiedolabs/eslint-config-nextjs',
+    'plugin:jest/recommended'
   ],
   settings: {
     'import/resolver': {
