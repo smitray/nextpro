@@ -24,7 +24,8 @@ module.exports = {
               graph: path.join(__dirname, './app/server/graph'),
               util: path.join(__dirname, './app/server/utilities'),
               middleware: path.join(__dirname, './app/server/middlewares'),
-              api: path.join(__dirname, './app/server/rest')
+              api: path.join(__dirname, './app/server/rest'),
+              app: path.join(__dirname, './app')
             }
           }
         }

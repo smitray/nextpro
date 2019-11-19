@@ -1,11 +1,11 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import { shallow } from 'enzyme';
 
-import IndexPage from '../app/client/pages/index';
+import IndexPage from 'app/client/pages/index';
 
 describe('Pages', () => {
   it('Index page says, Hello world', () => {
-    const wrap = mount(<IndexPage />);
+    const wrap = shallow(<IndexPage />);
     expect(wrap.find('p').text()).toBe('Hello, world');
   });
 });

@@ -2,5 +2,19 @@
   "presets": [
     "backpack-core/babel",
     "next/babel"
-  ]
+  ],
+  "plugins": [[
+    "module-resolver",
+    {
+      "root": ["./"],
+      "alias": {
+        "cfg": "./config",
+        "graph": "./app/server/graph",
+        "util": "./app/server/utilities",
+        "middleware": "./app/server/middlewares",
+        "api": "./app/server/rest",
+        "app": "./app"
+      }
+    }
+  ]]
 }

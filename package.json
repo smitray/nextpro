@@ -7,7 +7,7 @@
     "prebuild": "rimraf build",
     "build": "next build ./app/client && backpack build",
     "start": "node build/main.js",
-    "test": "jest",
+    "test": "jest --detectOpenHandles",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage --colors"
   },
@@ -73,6 +73,7 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
+    "babel-plugin-module-resolver": "^3.2.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
     "eslint": "^6.5.1",
