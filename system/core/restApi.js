@@ -1,6 +1,6 @@
 import Router from 'koa-router';
 
-import { routerControllPros } from 'api';
+import routerControllPros from 'api';
 
 let instance;
 

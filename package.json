@@ -7,7 +7,7 @@
     "prebuild": "rimraf build",
     "build": "next build ./app/client && backpack build",
     "start": "node build/main.js",
-    "test": "jest --detectOpenHandles",
+    "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage --colors"
   },

@@ -25,12 +25,18 @@ module.exports = {
               util: path.join(__dirname, './app/server/utilities'),
               middleware: path.join(__dirname, './app/server/middlewares'),
               api: path.join(__dirname, './app/server/rest'),
-              app: path.join(__dirname, './app')
+              app: path.join(__dirname, './app'),
+              core: path.join(__dirname, './system/core')
             }
           }
         }
       }
     }
+  },
+  globals: {
+    "shallow": false,
+    "render": false,
+    "mount": false
   },
   rules: {
     'comma-dangle': [

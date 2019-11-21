@@ -13,7 +13,8 @@
         "util": "./app/server/utilities",
         "middleware": "./app/server/middlewares",
         "api": "./app/server/rest",
-        "app": "./app"
+        "app": "./app",
+        "core": "./system/core"
       }
     }
   ]]

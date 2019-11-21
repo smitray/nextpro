@@ -30,8 +30,8 @@ const cRouter = new Router();
 
 (async () => {
   try {
-    await nextApp.prepare();
     serverConfig(app);
+    await nextApp.prepare();
     cRouter.all('*', async (ctx) => {
       await handle(ctx.req, ctx.res);
       ctx.respond = false;
@@ -54,11 +54,3 @@ const cRouter = new Router();
 })();
 
 export default app;
-
-export const close = async () => {
-  const { connections } = await dbConfig();
-  await connections[0].close();
-  server.close(() => {
-    reporter.info('Server is closed');
-  });
-};
