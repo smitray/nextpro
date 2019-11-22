@@ -8,5 +8,5 @@ module.exports = {
       useUnifiedTopology: true
     }
   },
-  graphql: false
+  graphql: true
 };
