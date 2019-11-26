@@ -1,47 +1,46 @@
-import convert from 'koa-convert';
-import cors from '@koa/cors';
-import bodyParser from 'koa-body';
-import helmet from 'koa-helmet';
-import serve from 'koa-static';
-import mount from 'koa-mount';
+import Koa from 'koa';
+import http from 'http';
+import socket from 'socket.io';
+import next from 'next';
+import Router from 'koa-router';
 
-import {
-  SERVER_SECRET,
-  path,
-  graphql
-} from 'cfg';
+import { path } from 'cfg';
 
-import { logger } from './logger';
-import graphControl from './graphQl';
-import apiControl from './restApi';
+import conf from '../../next.config';
 
-import { catchErr, statusMessage } from './error';
+import reporter from './logger';
+import serverConfig from './middleware';
 
-export default (app) => {
-  app.keys = SERVER_SECRET.split(',');
-  app.proxy = true;
-
-  app.use(convert.compose(
-    logger,
-    catchErr,
-    cors(),
-    statusMessage
-  ));
-
-  if (process.env.NODE_ENV === 'development') {
-    app.use(mount('/public', serve(path.static)));
-  }
-
-  if (graphql) {
-    graphControl(app);
-  } else {
-    app.use(convert.compose(
-      bodyParser({
-        multipart: true,
-        formLimit: '200mb'
-      }),
-      helmet(),
-    ));
-    apiControl(app);
+export default async () => {
+  const nextApp = next({
+    dev: process.env.NODE_ENV !== 'production',
+    dir: path.client,
+    conf
+  });
+  const handle = nextApp.getRequestHandler();
+  const app = new Koa();
+  const server = http.createServer(app.callback());
+  const io = socket(server);
+  app.io = io;
+  const cRouter = new Router();
+  try {
+    serverConfig(app);
+    await nextApp.prepare();
+    cRouter.all('*', async (ctx) => {
+      await handle(ctx.req, ctx.res);
+      ctx.respond = false;
+    });
+    app.use(async (ctx, nxt) => {
+      ctx.res.statusCode = 200;
+      await nxt();
+    });
+    app.use(cRouter.routes());
+    return {
+      app,
+      server
+    };
+  } catch (error) {
+    reporter.error('Server setup failed', error);
+    throw new Error(error);
   }
 };
