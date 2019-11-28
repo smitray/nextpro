@@ -1,6 +1,6 @@
 import { AuthenticationError } from 'apollo-server-koa';
 import { accountService } from 'graph/account';
-import { userService } from './index';
+import userService from './service';
 
 const userResolvers = {
   Query: {

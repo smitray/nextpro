@@ -8,11 +8,12 @@ const start = async () => {
   try {
     const { connections } = await dbConfig();
     const { server } = await serverConfig();
-    server.listen(port, host);
-    reporter.info('Server is up and running', {
-      host,
-      port,
-      database: `${connections[0].host}:${connections[0].port}/${connections[0].name}`
+    server.listen(port, host, () => {
+      reporter.info('Server is up and running', {
+        host: server.address().address,
+        port: server.address().port,
+        database: `${connections[0].host}:${connections[0].port}/${connections[0].name}`
+      });
     });
   } catch (err) {
     reporter.error('Server failed to start', err);

@@ -1,0 +1,13 @@
+import { Crud } from 'util';
+import {{camelCase name}}Model from './{{camelCase name}}.model';
+
+class {{pascalCase name}}Service extends Crud {
+  // constructor(model) {
+  //   super(model);
+
+  // }
+}
+
+const {{camelCase name}}Crud = new {{pascalCase name}}Service({{camelCase name}}Model);
+
+export default {{camelCase name}}Crud;

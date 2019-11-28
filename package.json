@@ -10,7 +10,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage --colors",
-    "release": "standard-version"
+    "release": "standard-version",
+    "generate": "plop --plopfile generators/index.js"
   },
   "repository": {
     "type": "git",
@@ -91,6 +92,7 @@
     "eslint-plugin-react": "^7.16.0",
     "husky": "^3.1.0",
     "jest": "^24.9.0",
+    "plop": "^2.5.3",
     "standard-version": "^7.0.1",
     "supertest": "^4.0.2"
   },

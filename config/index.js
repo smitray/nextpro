@@ -11,9 +11,8 @@ if (result.error) {
 
 var envs = result.parsed;
 
-const vars = {
+module.exports = {
   ...envs,
   ..._.merge(env[process.env.NODE_ENV], base),
   ...paths
 };
-module.exports = vars;

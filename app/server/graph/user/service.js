@@ -1,5 +1,5 @@
-import Crud from 'util/Crud';
-import { userModel } from './index';
+import { Crud } from 'util';
+import userModel from './model';
 
 class UserService extends Crud {
   // constructor(model) {

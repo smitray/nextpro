@@ -1,0 +1,28 @@
+import { gql } from 'apollo-server-koa';
+
+const {{camelCase name}}Defs = gql`
+
+  type {{camelCase name}} {
+    _id: String
+  }
+
+  extend type Query {
+    {{camelCase name}}s: [{{camelCase name}}],
+    {{camelCase name}}: {{camelCase name}}
+  }
+
+  extend type Mutation {
+    {{camelCase name}}Create(
+
+    ): {{camelCase name}}
+    {{camelCase name}}Update(
+      _id: String!
+    ): {{camelCase name}}
+    {{camelCase name}}Delete(
+      _id: String!
+    ): {{camelCase name}}
+  }
+
+`;
+
+export default {{camelCase name}}Defs;

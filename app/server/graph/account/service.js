@@ -2,7 +2,7 @@ import { sign } from 'jsonwebtoken';
 import { genSaltSync, hashSync, compareSync } from 'bcryptjs';
 import { userService } from 'graph/user';
 import { SERVER_SECRET } from 'cfg';
-import Crud from 'util/Crud';
+import { Crud } from 'util';
 import { accountModel } from './index';
 
 const secret = SERVER_SECRET.split(',');
