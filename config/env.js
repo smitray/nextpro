@@ -4,12 +4,12 @@ module.exports = {
     host: '127.0.0.1',
     mongodb: {
       uri: 'mongodb://localhost',
-      db: 'lumble',
+      db: 'lumble-dev',
       port: 27017
     }
   },
   production: {
-    port: 3002,
+    port: 3000,
     host: '127.0.0.1',
     mongodb: {
       uri: 'mongodb://localhost',
@@ -18,11 +18,11 @@ module.exports = {
     }
   },
   test: {
-    port: 3000,
+    port: 3006,
     host: '127.0.0.1',
     mongodb: {
       uri: 'mongodb://localhost',
-      db: 'lumble',
+      db: 'lumble-test',
       port: 27017
     }
   }

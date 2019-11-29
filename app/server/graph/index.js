@@ -1,18 +1,15 @@
 import { merge } from 'lodash';
 
 /* INJECT_IMPORT */
-import { accountDefs, accountResolvers } from './account';
-import { userDefs, userResolvers } from './user';
+import { todoDefs, todoResolvers } from './todo';
 
 export const graphDefs = [
   /* INJECT_DEFS */
-  accountDefs,
-  userDefs
+  todoDefs
 ];
 
 
 export const resolvers = merge(
   /* INJECT_RESOLVERS */
-  accountResolvers,
-  userResolvers
+  todoResolvers
 );

@@ -4,6 +4,7 @@ import bodyParser from 'koa-body';
 import helmet from 'koa-helmet';
 import serve from 'koa-static';
 import mount from 'koa-mount';
+import IO from 'koa-socket-2';
 
 import {
   SERVER_SECRET,
@@ -21,8 +22,11 @@ export default (app) => {
   app.keys = SERVER_SECRET.split(',');
   app.proxy = true;
 
+  if (process.env.NODE_ENV !== 'test') {
+    app.use(logger);
+  }
+
   app.use(convert.compose(
-    logger,
     catchErr,
     cors(),
     statusMessage
@@ -44,4 +48,7 @@ export default (app) => {
     ));
     apiControl(app);
   }
+
+  const socket = new IO();
+  socket.attach(app);
 };

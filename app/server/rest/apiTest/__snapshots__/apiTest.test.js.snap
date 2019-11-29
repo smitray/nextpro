@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`demo test Test boy 1`] = `"{\\"success\\":1,\\"message\\":\\"From all\\"}"`;

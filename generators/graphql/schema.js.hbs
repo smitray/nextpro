@@ -8,7 +8,9 @@ const {{camelCase name}}Defs = gql`
 
   extend type Query {
     {{camelCase name}}s: [{{camelCase name}}],
-    {{camelCase name}}: {{camelCase name}}
+    {{camelCase name}}(
+      _id: String!
+    ): {{camelCase name}}
   }
 
   extend type Mutation {
