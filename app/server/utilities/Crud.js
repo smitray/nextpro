@@ -73,6 +73,16 @@ export default class Crud {
     });
   }
 
+  async deleteMany(options) {
+    return new Promise((resolve, reject) => {
+      this.model.deleteMany(options).then((result) => {
+        resolve(result);
+      }).catch((e) => {
+        reject(e);
+      });
+    });
+  }
+
   create(options) {
     return new Promise((resolve, reject) => {
       this.model.create(options).then((result) => {

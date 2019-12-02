@@ -1,5 +1,5 @@
 import request from 'supertest';
-import { app } from 'core';
+import app from 'core/server';
 
 
 describe('demo test', () => {

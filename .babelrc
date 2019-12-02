@@ -14,7 +14,8 @@
         "middleware": "./app/server/middlewares",
         "api": "./app/server/rest",
         "app": "./app",
-        "core": "./system/core"
+        "core": "./system/core",
+        "components": "./app/client/components"
       }
     }
   ]]

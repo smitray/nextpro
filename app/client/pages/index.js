@@ -1,5 +1,8 @@
-import React from 'react';
+import Header from 'components/Header';
 
 export default () => (
-  <p>Hello, world</p>
+  <>
+    <Header />
+    <p>Hi this is a test</p>
+  </>
 );
