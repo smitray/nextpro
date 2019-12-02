@@ -7,9 +7,9 @@
     "prebuild": "rimraf build",
     "build": "next build ./app/client && backpack build",
     "start": "cross-env NODE_ENV=production node build/main.js",
-    "test": "cross-env NODE_ENV=test jest",
+    "test": "cross-env NODE_ENV=test jest --testResultsProcessor=jest-stare",
     "test:watch": "cross-env NODE_ENV=test jest --watch",
-    "test:coverage": "cross-env NODE_ENV=test jest --coverage --colors",
+    "test:coverage": "cross-env NODE_ENV=test jest --coverage --colors --testResultsProcessor=jest-stare",
     "release": "standard-version",
     "generate": "plop --plopfile generators/index.js"
   },
@@ -96,6 +96,7 @@
     "eslint-plugin-react": "^7.16.0",
     "husky": "^3.1.0",
     "jest": "^24.9.0",
+    "jest-stare": "^1.25.0",
     "jest-transform-stub": "^2.0.0",
     "plop": "^2.5.3",
     "shelljs": "^0.8.3",
@@ -111,5 +112,10 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "jest-stare": {
+    "resultDir": "tests/reports",
+    "reportTitle": "NextPro Reports",
+    "coverageLink": "../../coverage/lcov-report/index.html"
   }
 }

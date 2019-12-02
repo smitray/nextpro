@@ -4,7 +4,12 @@ const cfg = require('./config');
 module.exports = {
   moduleFileExtensions: ['js', 'jsx', 'json'],
 	testMatch: ['**/__tests__/**/*.js?(x)', '**/?(*.)+(spec|test).js?(x)'],
-	coveragePathIgnorePatterns: ['/node_modules/'],
+	coveragePathIgnorePatterns: [
+		'/node_modules/',
+		'/system/',
+		'/app/server/utilities/',
+		'/config/'
+	],
 	setupFiles: ['<rootDir>/jest.setup.js'],
 	testPathIgnorePatterns: [
 		'<rootDir>/.next/',
@@ -15,5 +20,5 @@ module.exports = {
 	transform: {
     '.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$': 'jest-transform-stub',
     '^.+\\.(js|jsx)?$': 'babel-jest'
-  }
+	}
 };
