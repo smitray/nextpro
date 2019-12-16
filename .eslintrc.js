@@ -37,7 +37,8 @@ module.exports = {
   globals: {
     "shallow": false,
     "render": false,
-    "mount": false
+    "mount": false,
+    "page": false
   },
   rules: {
     'comma-dangle': [
