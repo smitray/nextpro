@@ -9,11 +9,13 @@ const start = async () => {
   try {
     const { connection } = await dbConfig();
     const server = app.listen(port, host, () => {
-      reporter.info('Server is up and running', {
-        host: server.address().address,
-        port: server.address().port,
-        database: `${connection.host}:${connection.port}/${connection.name}`
-      });
+      if (process.env.NODE_ENV !== 'test') {
+        reporter.info('Server is up and running', {
+          host: server.address().address,
+          port: server.address().port,
+          database: `${connection.host}:${connection.port}/${connection.name}`
+        });
+      }
     });
     db = connection;
   } catch (err) {

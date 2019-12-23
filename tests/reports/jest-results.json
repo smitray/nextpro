@@ -26,7 +26,7 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1575366230906,
+  "startTime": 1577101615075,
   "success": true,
   "testResults": [
     {
@@ -36,8 +36,8 @@
       "numPendingTests": 0,
       "numTodoTests": 0,
       "perfStats": {
-        "end": 1575366243402,
-        "start": 1575366240691
+        "end": 1577101616649,
+        "start": 1577101616050
       },
       "snapshot": {
         "added": 0,
@@ -48,13 +48,13 @@
         "updated": 0,
         "uncheckedKeys": []
       },
-      "testFilePath": "/home/smit/public_html/nextpro/tests/jest/pages/index.test.js",
+      "testFilePath": "/home/smit/public_html/nextpro/tests/pages/index.test.js",
       "testResults": [
         {
           "ancestorTitles": [
             "Pages"
           ],
-          "duration": 31,
+          "duration": 15,
           "failureMessages": [],
           "fullName": "Pages Index page says, Hello world",
           "location": null,
@@ -73,8 +73,8 @@
       "numPendingTests": 0,
       "numTodoTests": 0,
       "perfStats": {
-        "end": 1575366261805,
-        "start": 1575366240691
+        "end": 1577101626188,
+        "start": 1577101616063
       },
       "snapshot": {
         "added": 0,
@@ -91,7 +91,7 @@
           "ancestorTitles": [
             "Todo testing suit"
           ],
-          "duration": 500,
+          "duration": 124,
           "failureMessages": [],
           "fullName": "Todo testing suit [Todo:] Should create a todo",
           "location": null,
@@ -103,7 +103,7 @@
           "ancestorTitles": [
             "Todo testing suit"
           ],
-          "duration": 38,
+          "duration": 28,
           "failureMessages": [],
           "fullName": "Todo testing suit [Todo:] Should get specific todo",
           "location": null,
@@ -115,7 +115,7 @@
           "ancestorTitles": [
             "Todo testing suit"
           ],
-          "duration": 40,
+          "duration": 25,
           "failureMessages": [],
           "fullName": "Todo testing suit [Todo:] Should update specific todo",
           "location": null,
@@ -127,7 +127,7 @@
           "ancestorTitles": [
             "Todo testing suit"
           ],
-          "duration": 12,
+          "duration": 17,
           "failureMessages": [],
           "fullName": "Todo testing suit [Todo:] Should delete a specific todo",
           "location": null,
@@ -139,7 +139,7 @@
           "ancestorTitles": [
             "Todo testing suit"
           ],
-          "duration": 11,
+          "duration": 12,
           "failureMessages": [],
           "fullName": "Todo testing suit [Todo:] Should return empty todo",
           "location": null,

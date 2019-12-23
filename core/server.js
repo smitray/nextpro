@@ -4,7 +4,7 @@ import Router from 'koa-router';
 
 import { path } from 'cfg';
 
-import conf from '../../next.config';
+import conf from '../next.config';
 
 import reporter from './logger';
 import serverConfig from './middleware';

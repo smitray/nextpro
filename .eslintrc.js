@@ -26,7 +26,7 @@ module.exports = {
               middleware: path.join(__dirname, './app/server/middlewares'),
               api: path.join(__dirname, './app/server/rest'),
               app: path.join(__dirname, './app'),
-              core: path.join(__dirname, './system/core'),
+              core: path.join(__dirname, './core'),
               components: path.join(__dirname, './app/client/components')
             }
           }
