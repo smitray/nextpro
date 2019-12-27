@@ -26,7 +26,7 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1577101615075,
+  "startTime": 1577445697082,
   "success": true,
   "testResults": [
     {
@@ -36,8 +36,8 @@
       "numPendingTests": 0,
       "numTodoTests": 0,
       "perfStats": {
-        "end": 1577101616649,
-        "start": 1577101616050
+        "end": 1577445699893,
+        "start": 1577445699062
       },
       "snapshot": {
         "added": 0,
@@ -54,7 +54,7 @@
           "ancestorTitles": [
             "Pages"
           ],
-          "duration": 15,
+          "duration": 13,
           "failureMessages": [],
           "fullName": "Pages Index page says, Hello world",
           "location": null,
@@ -73,8 +73,8 @@
       "numPendingTests": 0,
       "numTodoTests": 0,
       "perfStats": {
-        "end": 1577101626188,
-        "start": 1577101616063
+        "end": 1577445708248,
+        "start": 1577445699062
       },
       "snapshot": {
         "added": 0,
@@ -91,7 +91,7 @@
           "ancestorTitles": [
             "Todo testing suit"
           ],
-          "duration": 124,
+          "duration": 757,
           "failureMessages": [],
           "fullName": "Todo testing suit [Todo:] Should create a todo",
           "location": null,
@@ -103,7 +103,7 @@
           "ancestorTitles": [
             "Todo testing suit"
           ],
-          "duration": 28,
+          "duration": 51,
           "failureMessages": [],
           "fullName": "Todo testing suit [Todo:] Should get specific todo",
           "location": null,
@@ -115,7 +115,7 @@
           "ancestorTitles": [
             "Todo testing suit"
           ],
-          "duration": 25,
+          "duration": 115,
           "failureMessages": [],
           "fullName": "Todo testing suit [Todo:] Should update specific todo",
           "location": null,
@@ -127,7 +127,7 @@
           "ancestorTitles": [
             "Todo testing suit"
           ],
-          "duration": 17,
+          "duration": 21,
           "failureMessages": [],
           "fullName": "Todo testing suit [Todo:] Should delete a specific todo",
           "location": null,
@@ -139,7 +139,7 @@
           "ancestorTitles": [
             "Todo testing suit"
           ],
-          "duration": 12,
+          "duration": 13,
           "failureMessages": [],
           "fullName": "Todo testing suit [Todo:] Should return empty todo",
           "location": null,

@@ -41,6 +41,11 @@ module.exports = {
       templateFile: './graphql/schema.js.hbs',
       abortOnFail: true
     }, {
+      type: 'add',
+      path: '../app/server/graph/{{camelCase name}}/{{camelCase name}}.test.js',
+      templateFile: './graphql/test.js.hbs',
+      abortOnFail: true
+    }, {
       type: 'append',
       path: '../app/server/graph/index.js',
       pattern: `/* INJECT_IMPORT */`,

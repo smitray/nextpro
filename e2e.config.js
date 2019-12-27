@@ -7,5 +7,8 @@ module.exports = {
     '<rootDir>/node_modules/',
     '<rootDir>/app/',
     '<rootDir>/tests/pages/'
-  ]
+  ],
+  transform: {
+    '^.+\\.(js|jsx)?$': 'babel-jest'
+  }
 };

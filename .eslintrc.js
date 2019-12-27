@@ -35,10 +35,13 @@ module.exports = {
     }
   },
   globals: {
-    "shallow": false,
-    "render": false,
-    "mount": false,
-    "page": false
+    shallow: true,
+    render: true,
+    mount: true,
+    page: true,
+    browser: true,
+    context: true,
+    jestPuppeteer: true,
   },
   rules: {
     'comma-dangle': [
@@ -56,6 +59,11 @@ module.exports = {
         'allow': [
           '_id'
         ]
+      }
+    ],
+    'import/no-extraneous-dependencies': [
+      'error', {
+        'devDependencies': true
       }
     ],
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,

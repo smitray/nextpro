@@ -3,6 +3,6 @@ import Header from 'components/Header';
 export default () => (
   <>
     <Header />
-    <p>Hi this is a test</p>
+    <h1>Hi this is a test</h1>
   </>
 );

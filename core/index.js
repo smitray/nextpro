@@ -5,10 +5,11 @@ import dbConfig from './database';
 import app from './server';
 
 let db;
+let server;
 const start = async () => {
   try {
     const { connection } = await dbConfig();
-    const server = app.listen(port, host, () => {
+    server = app.listen(port, host, () => {
       if (process.env.NODE_ENV !== 'test') {
         reporter.info('Server is up and running', {
           host: server.address().address,
@@ -26,6 +27,7 @@ const start = async () => {
 
 const stop = async () => {
   await db.close();
+  await server.close();
 };
 
 start();

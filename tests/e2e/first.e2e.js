@@ -1,19 +1,9 @@
-const puppeteer = require('puppeteer');
-
 describe('Google', () => {
   it('Should display google', async () => {
-    const browser = await puppeteer.launch({
-      headless: false,
-      devtools: true,
-      args: [
-        '--start-maximized'
-      ]
-    });
     const page = await browser.newPage();
-
-    // await page.setViewport({ width: 1366, height: 768 });
-    await page.goto('https://google.com');
-    await expect(page).toMatch('google');
-    browser.close();
+    await page.goto('http://127.0.0.1:3000');
+    await page.waitForSelector('h1');
+    const html = await page.$eval('h1', (e) => e.innerHTML);
+    expect(html).toBe('Hi this is a test');
   }, 30000);
 });

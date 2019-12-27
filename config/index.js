@@ -11,6 +11,8 @@ if (result.error) {
 
 var envs = result.parsed;
 
+// console.log(process.env.NODE_ENV);
+
 module.exports = {
   ...envs,
   ..._.merge(env[process.env.NODE_ENV], base),
