@@ -19,5 +19,17 @@ module.exports = {
   transform: {
     '.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$': 'jest-transform-stub',
     '^.+\\.(js|jsx)?$': 'babel-jest'
-  }
+  },
+  reporters: [
+    'default',
+    [
+      'jest-stare',
+      {
+        reportTitle: 'NextPro Reports',
+        reportHeadline: 'NextPro Reports',
+        resultDir: 'reports/tests',
+        coverageLink: '../../coverage/lcov-report/index.html'
+      }
+    ]
+  ]
 };

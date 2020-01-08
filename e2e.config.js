@@ -10,5 +10,16 @@ module.exports = {
   ],
   transform: {
     '^.+\\.(js|jsx)?$': 'babel-jest'
-  }
+  },
+  reporters: [
+    'default',
+    [
+      'jest-stare',
+      {
+        reportTitle: 'NextPro e2e Reports',
+        reportHeadline: 'NextPro e2e Reports',
+        resultDir: 'reports/e2e'
+      }
+    ]
+  ]
 };

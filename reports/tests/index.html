@@ -109,10 +109,12 @@
 
         <div class="d-none" id="test-summary"></div>
         <div class="d-none" id="test-config">{
-  &quot;resultDir&quot;: &quot;tests&#x2F;reports&#x2F;&quot;,
   &quot;reportTitle&quot;: &quot;NextPro Reports&quot;,
   &quot;reportHeadline&quot;: &quot;NextPro Reports&quot;,
+  &quot;resultDir&quot;: &quot;reports&#x2F;tests&#x2F;&#x2F;&#x2F;&#x2F;&quot;,
   &quot;coverageLink&quot;: &quot;..&#x2F;..&#x2F;coverage&#x2F;lcov-report&#x2F;index.html&quot;,
+  &quot;additionalResultsProcessors&quot;: [],
+  &quot;log&quot;: false,
   &quot;resultHtml&quot;: &quot;index.html&quot;,
   &quot;resultJson&quot;: &quot;jest-results.json&quot;
 }</div>
@@ -144,8 +146,8 @@
     &quot;unmatched&quot;: 0,
     &quot;updated&quot;: 0
   },
-  &quot;startTime&quot;: 1577445697082,
-  &quot;success&quot;: true,
+  &quot;startTime&quot;: 1578484575682,
+  &quot;success&quot;: false,
   &quot;testResults&quot;: [
     {
       &quot;failureMessage&quot;: null,
@@ -154,8 +156,8 @@
       &quot;numPendingTests&quot;: 0,
       &quot;numTodoTests&quot;: 0,
       &quot;perfStats&quot;: {
-        &quot;end&quot;: 1577445699893,
-        &quot;start&quot;: 1577445699062
+        &quot;end&quot;: 1578484577560,
+        &quot;start&quot;: 1578484576890
       },
       &quot;snapshot&quot;: {
         &quot;added&quot;: 0,
@@ -166,13 +168,13 @@
         &quot;updated&quot;: 0,
         &quot;uncheckedKeys&quot;: []
       },
-      &quot;testFilePath&quot;: &quot;&#x2F;home&#x2F;smit&#x2F;public_html&#x2F;nextpro&#x2F;tests&#x2F;pages&#x2F;index.test.js&quot;,
+      &quot;testFilePath&quot;: &quot;&#x2F;home&#x2F;smit&#x2F;public_html&#x2F;nextpro&#x2F;app&#x2F;client&#x2F;__tests__&#x2F;index.page.js&quot;,
       &quot;testResults&quot;: [
         {
           &quot;ancestorTitles&quot;: [
             &quot;Pages&quot;
           ],
-          &quot;duration&quot;: 13,
+          &quot;duration&quot;: 22,
           &quot;failureMessages&quot;: [],
           &quot;fullName&quot;: &quot;Pages Index page says, Hello world&quot;,
           &quot;location&quot;: null,
@@ -191,8 +193,8 @@
       &quot;numPendingTests&quot;: 0,
       &quot;numTodoTests&quot;: 0,
       &quot;perfStats&quot;: {
-        &quot;end&quot;: 1577445708248,
-        &quot;start&quot;: 1577445699062
+        &quot;end&quot;: 1578484585103,
+        &quot;start&quot;: 1578484576850
       },
       &quot;snapshot&quot;: {
         &quot;added&quot;: 0,
@@ -209,7 +211,7 @@
           &quot;ancestorTitles&quot;: [
             &quot;Todo testing suit&quot;
           ],
-          &quot;duration&quot;: 757,
+          &quot;duration&quot;: 113,
           &quot;failureMessages&quot;: [],
           &quot;fullName&quot;: &quot;Todo testing suit [Todo:] Should create a todo&quot;,
           &quot;location&quot;: null,
@@ -221,7 +223,7 @@
           &quot;ancestorTitles&quot;: [
             &quot;Todo testing suit&quot;
           ],
-          &quot;duration&quot;: 51,
+          &quot;duration&quot;: 29,
           &quot;failureMessages&quot;: [],
           &quot;fullName&quot;: &quot;Todo testing suit [Todo:] Should get specific todo&quot;,
           &quot;location&quot;: null,
@@ -233,7 +235,7 @@
           &quot;ancestorTitles&quot;: [
             &quot;Todo testing suit&quot;
           ],
-          &quot;duration&quot;: 115,
+          &quot;duration&quot;: 25,
           &quot;failureMessages&quot;: [],
           &quot;fullName&quot;: &quot;Todo testing suit [Todo:] Should update specific todo&quot;,
           &quot;location&quot;: null,
@@ -245,7 +247,7 @@
           &quot;ancestorTitles&quot;: [
             &quot;Todo testing suit&quot;
           ],
-          &quot;duration&quot;: 21,
+          &quot;duration&quot;: 16,
           &quot;failureMessages&quot;: [],
           &quot;fullName&quot;: &quot;Todo testing suit [Todo:] Should delete a specific todo&quot;,
           &quot;location&quot;: null,
@@ -257,7 +259,7 @@
           &quot;ancestorTitles&quot;: [
             &quot;Todo testing suit&quot;
           ],
-          &quot;duration&quot;: 13,
+          &quot;duration&quot;: 21,
           &quot;failureMessages&quot;: [],
           &quot;fullName&quot;: &quot;Todo testing suit [Todo:] Should return empty todo&quot;,
           &quot;location&quot;: null,
@@ -272,7 +274,68 @@
   ],
   &quot;wasInterrupted&quot;: false
 }</div>
-        <div class="d-none" id="test-global-config"></div>
+        <div class="d-none" id="test-global-config">{
+  &quot;bail&quot;: 0,
+  &quot;changedFilesWithAncestor&quot;: false,
+  &quot;collectCoverage&quot;: false,
+  &quot;collectCoverageFrom&quot;: null,
+  &quot;coverageDirectory&quot;: &quot;&#x2F;home&#x2F;smit&#x2F;public_html&#x2F;nextpro&#x2F;coverage&quot;,
+  &quot;coverageReporters&quot;: [
+    &quot;json&quot;,
+    &quot;text&quot;,
+    &quot;lcov&quot;,
+    &quot;clover&quot;
+  ],
+  &quot;coverageThreshold&quot;: null,
+  &quot;detectLeaks&quot;: false,
+  &quot;detectOpenHandles&quot;: false,
+  &quot;errorOnDeprecated&quot;: false,
+  &quot;expand&quot;: false,
+  &quot;filter&quot;: null,
+  &quot;globalSetup&quot;: null,
+  &quot;globalTeardown&quot;: null,
+  &quot;json&quot;: false,
+  &quot;listTests&quot;: false,
+  &quot;maxConcurrency&quot;: 5,
+  &quot;maxWorkers&quot;: 3,
+  &quot;noStackTrace&quot;: false,
+  &quot;nonFlagArgs&quot;: [],
+  &quot;notify&quot;: false,
+  &quot;notifyMode&quot;: &quot;failure-change&quot;,
+  &quot;passWithNoTests&quot;: false,
+  &quot;projects&quot;: null,
+  &quot;reporters&quot;: [
+    [
+      &quot;default&quot;,
+      {}
+    ],
+    [
+      &quot;&#x2F;home&#x2F;smit&#x2F;public_html&#x2F;nextpro&#x2F;node_modules&#x2F;jest-stare&#x2F;lib&#x2F;index.js&quot;,
+      {
+        &quot;reportTitle&quot;: &quot;NextPro Reports&quot;,
+        &quot;reportHeadline&quot;: &quot;NextPro Reports&quot;,
+        &quot;resultDir&quot;: &quot;reports&#x2F;tests&#x2F;&#x2F;&#x2F;&#x2F;&quot;,
+        &quot;coverageLink&quot;: &quot;..&#x2F;..&#x2F;coverage&#x2F;lcov-report&#x2F;index.html&quot;,
+        &quot;additionalResultsProcessors&quot;: [],
+        &quot;log&quot;: false,
+        &quot;resultHtml&quot;: &quot;index.html&quot;,
+        &quot;resultJson&quot;: &quot;jest-results.json&quot;
+      }
+    ]
+  ],
+  &quot;rootDir&quot;: &quot;&#x2F;home&#x2F;smit&#x2F;public_html&#x2F;nextpro&quot;,
+  &quot;runTestsByPath&quot;: false,
+  &quot;skipFilter&quot;: false,
+  &quot;testFailureExitCode&quot;: 1,
+  &quot;testPathPattern&quot;: &quot;&quot;,
+  &quot;testResultsProcessor&quot;: null,
+  &quot;testSequencer&quot;: &quot;&#x2F;home&#x2F;smit&#x2F;public_html&#x2F;nextpro&#x2F;node_modules&#x2F;@jest&#x2F;test-sequencer&#x2F;build&#x2F;index.js&quot;,
+  &quot;updateSnapshot&quot;: &quot;new&quot;,
+  &quot;useStderr&quot;: false,
+  &quot;verbose&quot;: null,
+  &quot;watch&quot;: false,
+  &quot;watchman&quot;: true
+}</div>
 
     </main>
     <hr>

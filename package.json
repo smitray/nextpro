@@ -7,11 +7,11 @@
     "prebuild": "rimraf build",
     "build": "next build ./app/client && backpack build",
     "start": "node build/main.js",
-    "test": "jest --testResultsProcessor=jest-stare",
+    "test": "jest",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage --colors --testResultsProcessor=jest-stare",
-    "e2e": "jest --config=./e2e.config.js",
-    "e2erun": "npm-run-all build --parallel start e2e",
+    "test:coverage": "jest --coverage --colors",
+    "e2estart": "jest --config=./e2e.config.js",
+    "e2e": "npm-run-all build --parallel start e2estart",
     "release": "standard-version",
     "generate": "plop --plopfile generators/index.js"
   },
@@ -116,11 +116,5 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  },
-  "jest-stare": {
-    "reportTitle": "NextPro Reports",
-    "reportHeadline": "NextPro Reports",
-    "resultDir": "tests/reports",
-    "coverageLink": "../../coverage/lcov-report/index.html"
   }
 }

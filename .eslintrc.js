@@ -19,6 +19,7 @@ module.exports = {
       webpack: {
         config: {
           resolve: {
+            extensions: ['*', '.js', '.jsx'],
             alias: {
               cfg: path.join(__dirname, './config'),
               graph: path.join(__dirname, './app/server/graph'),

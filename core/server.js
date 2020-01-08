@@ -23,14 +23,7 @@ if (process.env.NODE_ENV !== 'test') {
   (async () => {
     try {
       await nextApp.prepare();
-      cRouter.all('*', async (ctx) => {
-        await handle(ctx.req, ctx.res);
-        ctx.respond = false;
-      });
-      app.use(async (ctx, nxt) => {
-        ctx.res.statusCode = 200;
-        await nxt();
-      });
+      cRouter.get('*', (ctx) => handle(ctx.req, ctx.res));
     } catch (error) {
       reporter.error('Next.js setup failed', error);
       throw new Error(error);
