@@ -1,0 +1,28 @@
+---
+name: {{ titleCase name }}
+menu: Components
+route: /components/{{ dashCase name }}
+---
+
+import { Playground, Props } from 'docz'
+import {{ properCase name }} from '.';
+
+# JS 
+
+```js
+const a = "abc";
+```
+
+# {{ titleCase name }}
+
+
+## Properties
+
+<Props of={ {{ properCase name }} } />
+
+
+## Using different kinds
+
+<Playground>
+
+</Playground>
