@@ -1,6 +1,6 @@
 export default {
-  title: 'NextPro',
-  ignore: ['readme.md'],
+  title: 'VU UMS',
+  ignore: [],
   dest: 'docs',
   gatsbyRemarkPlugins: [
     'gatsby-remark-copy-linked-files',
@@ -9,11 +9,11 @@ export default {
       options: {
         theme: 'forest'
       }
-    },
-    {
-      resolve: 'gatsby-remark-prismjs',
-      // OPTIONAL
-      options: {}
     }
+    // {
+    //   resolve: 'gatsby-remark-prismjs',
+    //   // OPTIONAL
+    //   options: {}
+    // }
   ]
 };

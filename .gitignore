@@ -52,3 +52,6 @@ sw.*
 
 # Ignore build folder
 build/
+
+# Docz build folder
+.docz

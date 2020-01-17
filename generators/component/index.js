@@ -44,7 +44,7 @@ module.exports = {
     }
     return [{
       type: 'add',
-      path: `${path}/index.js`,
+      path: `${path}/index.jsx`,
       templateFile: data.type === 'ES6 Class'
         ? './component/es6class.js.hbs' : './component/stateless.js.hbs',
       abortOnFail: true

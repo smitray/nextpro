@@ -1,0 +1,31 @@
+---
+name: Checkbox
+menu: Components
+route: /components/checkbox
+---
+
+import { Playground, Props } from 'docz'
+import Checkbox from '.';
+
+# Checkbox
+
+
+## Properties
+
+<Props of={ Checkbox } />
+
+
+## Using different kinds
+
+<Playground>
+  <Checkbox 
+    groupLabel="hobbies"
+    data={[{
+      label: 'Video Game',
+      value: 'videogame'
+    }, {
+      label: 'Music',
+      value: 'music'
+    }]}
+  />
+</Playground>
