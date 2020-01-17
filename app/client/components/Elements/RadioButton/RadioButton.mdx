@@ -1,0 +1,31 @@
+---
+name: Radio Button
+menu: Components
+route: /components/radio-button
+---
+
+import { Playground, Props } from 'docz'
+import RadioButton from '.';
+
+# Radio Button
+
+
+## Properties
+
+<Props of={ RadioButton } />
+
+
+## Using different kinds
+
+<Playground>
+  <RadioButton
+    groupLabel="gender"
+    data={[{
+      label: 'Male',
+      value: 'male'
+    }, {
+      label: 'Female',
+      value: 'female'
+    }]}
+  />
+</Playground>
