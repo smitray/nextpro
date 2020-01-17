@@ -1,12 +1,21 @@
----
-name: Changelog
-menu: Changelog
-route: /changelog
----
-
 # Changelog
 
-All notable changes to this project will be documented here.
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [1.3.0](https://gitlab.com/smitray/vidyasagar-university-proto-02/compare/v1.2.0...v1.3.0) (2020-01-17)
+
+
+### Features
+
+* **component generated added:** component generator added ([f890dfb](https://gitlab.com/smitray/vidyasagar-university-proto-02/commit/f890dfb6bfa933e8070001dd10b0fa97968cb75b))
+* **docz addded:** docz added ([6507b3b](https://gitlab.com/smitray/vidyasagar-university-proto-02/commit/6507b3b52b1f7bd573ebbc042893cf22ab9bb090))
+* **form elements 3/42:** form elements ([d2aa981](https://gitlab.com/smitray/vidyasagar-university-proto-02/commit/d2aa98133db879dc9b7d6d7c246752cfcd70f210))
+
+
+### Bug Fixes
+
+* **folder and test:** folder and test ([5285cc5](https://gitlab.com/smitray/vidyasagar-university-proto-02/commit/5285cc5db117d4891d1829ec8a06db9f9de5da83))
+* **plop component sub folder:** plop component sub folder ([bd4eab9](https://gitlab.com/smitray/vidyasagar-university-proto-02/commit/bd4eab92a01e3b1806a70d894614480ff7852e4c))
 
 ## [1.2.0](https://gitlab.com/smitray/nextpro/compare/v1.1.0...v1.2.0) (2019-12-27)
 
