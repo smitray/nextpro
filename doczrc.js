@@ -1,5 +1,5 @@
 export default {
-  title: 'VU UMS',
+  title: 'NextPro',
   ignore: [],
   dest: 'docs',
   gatsbyRemarkPlugins: [
